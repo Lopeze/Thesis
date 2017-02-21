@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <sys/types.h>
 
+<<<<<<< HEAD
 #include "sha256.h"
 
 struct hmac_sha256_state_struct {
@@ -26,5 +27,9 @@ int hmac_sha256_update(Hmac_state_t h, const uint8_t *data, size_t data_size);
 
 int hmac_sha256_final(uint8_t *digest, Hmac_state_t h);
  
+=======
+
+uint8_t *HMAC_SHA256(uint8_t *result, const uint8_t *key, const size_t keysize, const uint8_t *data, const size_t datasize);
+>>>>>>> f23ec8d6e6321f6e2c620d3d105d6b75dd93940f
 
 #endif
